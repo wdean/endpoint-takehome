@@ -12,6 +12,11 @@ USAGE:
 
 IMPLEMENTATION NOTES:
 
+    Directories are implemented as a simple python tuple with 2 elements: the name, and a list of subdirectories.
+    
+    If provided a command file, the program will attempt to execute all lines in the file. Any encounter with the 
+    command "DONE" or lines that start with "DONE" will be ignored and skipped.
+
     Commands are not case sensitive, but directory names are.
 
     Directory name "root" is reserved for the base root directory. This program will not allow the creation of any other
