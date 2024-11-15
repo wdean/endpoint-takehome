@@ -1,0 +1,37 @@
+CREATE fruits
+CREATE vegetables
+CREATE grains
+CREATE fruits/apples
+CREATE fruits/apples/fuji
+LIST
+CREATE grains/squash
+MOVE grains/squash vegetables
+CREATE foods
+MOVE grains foods
+MOVE fruits foods
+MOVE vegetables foods
+LIST
+DELETE fruits/apples
+DELETE foods/fruits/apples
+LIST
+CREATE meats/beef/brisket
+CREATE meats/fish/tuna
+CREATE meats/beef/sirloin
+create meats/chicken
+MOVE meats foods
+list
+CREATE ham
+create bacon
+MOVE ham foods/meats/pork/cured
+move bacon foods/meats/pork/cured
+CREATE foods/meats/pork/chops
+list
+CREATE foods/grains
+CREATE root
+CREATE root/foods/bread
+CREATE foods/root/turnip
+MOVE foods/meats/beef root/favorites
+Create radishes
+MOVE radishes foods/root
+MOVE foods/meats/beef root
+LIST
